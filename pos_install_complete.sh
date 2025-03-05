@@ -140,17 +140,10 @@ clear
 
 # Instalar aplicativos Flatpak
 flatpak=(
-	org.gimp.GIMP
-	org.gimp.GIMP.Plugin.Resynthesizer/x86_64/2-40
-	org.inkscape.Inkscape 
 	org.gnome.Builder
-	ar.xjuan.Cambalache 
-	re.sonny.Workbench
-	org.DolphinEmu.dolphin-emu
 	com.getpostman.Postman
 	com.github.tchx84.Flatseal
 	com.usebottles.bottles
-	com.bitwarden.desktop
 	de.haeckerfelix.Fragments
 	org.sqlitebrowser.sqlitebrowser
 )
@@ -160,17 +153,6 @@ for nome_do_flatpak in "${flatpak[@]}"; do
     sudo flatpak install flathub --system "$nome_do_flatpak" -y
   fi
 done
-
-## Instalar Vscode from repository
-
-sudo apt-get install wget gpg -y
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
-echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
-rm -f packages.microsoft.gpg
-sudo apt install apt-transport-https -y
-sudo apt update
-sudo apt install code -y
 
 ## Installing ONLYOFFICE Desktop Editors from repository
 

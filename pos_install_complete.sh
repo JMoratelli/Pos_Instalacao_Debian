@@ -8,23 +8,9 @@ echo -e "       #     Install flatpak support and flathub repository       #"
 echo -e "       ############################################################ \n"
 echo "For more information, visit the project link:"
 echo "https://github.com/phaleixo/after_install_debian_12"
-
-### Confirm script execution
-read -p "Do you want to proceed? (y/n): " response
-[[ "$response" != "y" ]] && inform "Operation canceled by the user." && exit 0
-
-### check if the distribution is compatible
-if [[ $(lsb_release -cs) = "bookworm" ]]
-then
-	echo ""
-	echo ""
-	echo -e "\e[32;1mDebian 12 Distribution.\e[m"
-	echo "Continuing with the script..."
-	echo ""
-else
-	echo -e "\e[31;1mDistribution not approved for use with this script.\e[m"
-	exit 1
-fi
+echo "Adaptado por jmoratelli e desenvolvido por phaleixo. https://github.com/phaleixo"
+### Install Wireguard
+sudo apt install wireguard -y
 
 ### check if there is an internet connection.
 if ping -q -c 3 -W 1 1.1.1.1 >/dev/null;

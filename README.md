@@ -1,3 +1,4 @@
+Todos créditos reservados à https://github.com/phaleixo
 Post installation script developed for Debian 12 live Gnome base, based on my use of programs, configurations and customizations.
 Link to download the ISO:
 https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-gnome.iso
@@ -5,17 +6,17 @@ https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-1
 Make all changes (recommend)
 
 ```
-curl -o pos_install_complete.sh https://raw.githubusercontent.com/phaleixo/after_install_debian_12/main/pos_install_complete.sh && chmod +x pos_install_complete.sh && ./pos_install_complete.sh && rm pos_install_complete.sh
+curl -o pos_install_complete.sh https://raw.githubusercontent.com/JMoratelli/Pos_Instalacao_Debian/refs/heads/main/pos_install_complete.sh && chmod +x pos_install_complete.sh && ./pos_install_complete.sh && rm pos_install_complete.sh
 ```
 
 Activating the contrib and non-free repository and install flatpak support and flathub repository:
 ```
-curl -o activating_repo_apps.sh https://raw.githubusercontent.com/phaleixo/after_install_debian_12/main/activating_repo_apps.sh && chmod +x activating_repo_apps.sh && ./activating_repo_apps.sh && rm activating_repo_apps.sh
+curl -o activating_repo_apps.sh https://raw.githubusercontent.com/JMoratelli/Pos_Instalacao_Debian/main/activating_repo_apps.sh && chmod +x activating_repo_apps.sh && ./activating_repo_apps.sh && rm activating_repo_apps.sh
 ```
 Change firefox ESR to Current:
 
 ```
-curl -o change_firefox_esr_to_firefox.sh https://raw.githubusercontent.com/phaleixo/after_install_debian_12/main/change_firefox_esr_to_firefox.sh && chmod +x change_firefox_esr_to_firefox.sh && ./change_firefox_esr_to_firefox.sh && rm change_firefox_esr_to_firefox.sh
+curl -o change_firefox_esr_to_firefox.sh https://raw.githubusercontent.com/JMoratelli/Pos_Instalacao_Debian/main/change_firefox_esr_to_firefox.sh && chmod +x change_firefox_esr_to_firefox.sh && ./change_firefox_esr_to_firefox.sh && rm change_firefox_esr_to_firefox.sh
 ```
 Codecs and tweaks installer:
 `
@@ -53,7 +54,7 @@ Codecs and tweaks installer:
 	default-jdk -y
 `
 ```
-curl -o codecs_and_tweaks_installer.sh https://raw.githubusercontent.com/phaleixo/after_install_debian_12/main/codecs_and_tweaks_installer.sh && chmod +x codecs_and_tweaks_installer.sh && ./codecs_and_tweaks_installer.sh && rm codecs_and_tweaks_installer.sh
+curl -o codecs_and_tweaks_installer.sh https://raw.githubusercontent.com/JMoratelli/Pos_Instalacao_Debian/main/codecs_and_tweaks_installer.sh && chmod +x codecs_and_tweaks_installer.sh && ./codecs_and_tweaks_installer.sh && rm codecs_and_tweaks_installer.sh
 ```
 
 
@@ -66,7 +67,7 @@ tophat
 tiling-assistant
 ''
 ```
-curl -o install_extensions.sh https://raw.githubusercontent.com/phaleixo/after_install_debian_12/main/install_extensions.sh && chmod +x install_extensions.sh && ./install_extensions.sh && rm install_extensions.sh
+curl -o install_extensions.sh https://raw.githubusercontent.com/JMoratelli/Pos_Instalacao_Debian/main/install_extensions.sh && chmod +x install_extensions.sh && ./install_extensions.sh && rm install_extensions.sh
 ```
 
 Unnecessary Apps Remover:
@@ -87,7 +88,7 @@ Unnecessary Apps Remover:
     gnome-music
     gnome-software
 ```
-curl -o unnecessary_apps_remover.sh https://raw.githubusercontent.com/phaleixo/after_install_debian_12/main/unnecessary_apps_remover.sh && chmod +x unnecessary_apps_remover.sh && ./unnecessary_apps_remover.sh && rm unnecessary_apps_remover.sh
+curl -o unnecessary_apps_remover.sh https://raw.githubusercontent.com/JMoratelli/Pos_Instalacao_Debian/main/unnecessary_apps_remover.sh && chmod +x unnecessary_apps_remover.sh && ./unnecessary_apps_remover.sh && rm unnecessary_apps_remover.sh
 ```
 
 Unnecessary Apps Remover:
@@ -108,7 +109,7 @@ Unnecessary Apps Remover:
 	sqlitebrowser
 )
 ```
-curl -o install_apps.sh https://raw.githubusercontent.com/phaleixo/after_install_debian_12/main/install_apps.sh && chmod +x install_apps.sh && ./install_apps.sh && rm install_apps.sh
+curl -o install_apps.sh https://raw.githubusercontent.com/JMoratelli/Pos_Instalacao_Debian/main/install_apps.sh && chmod +x install_apps.sh && ./install_apps.sh && rm install_apps.sh
 ```
 
 
@@ -118,13 +119,13 @@ Enable amdgpu drive and disable Radeon drive on Linux, tested on Debian 12, but 
 
 Tahiti, Bonaire, Hawaii, Pitcairn, Cape Verde, Oland.
 ```
-curl -o radeon_to_amdgpu.sh https://raw.githubusercontent.com/phaleixo/after_install_debian_12/main/radeon_to_amdgpu.sh && chmod +x radeon_to_amdgpu.sh && ./radeon_to_amdgpu.sh && rm radeon_to_amdgpu.sh
+curl -o radeon_to_amdgpu.sh https://raw.githubusercontent.com/JMoratelli/Pos_Instalacao_Debian/main/radeon_to_amdgpu.sh && chmod +x radeon_to_amdgpu.sh && ./radeon_to_amdgpu.sh && rm radeon_to_amdgpu.sh
 ```
 install and set fonts:
 ```
-curl -o fonts.sh https://raw.githubusercontent.com/phaleixo/after_install_debian_12/main/fonts.sh && chmod +x fonts.sh && ./fonts.sh && rm fonts.sh
+curl -o fonts.sh https://raw.githubusercontent.com/JMoratelli/Pos_Instalacao_Debian/main/fonts.sh && chmod +x fonts.sh && ./fonts.sh && rm fonts.sh
 ```
 install and set Wallpapers:
 ```
-curl -o wallpapers.sh https://raw.githubusercontent.com/phaleixo/after_install_debian_12/main/wallpapers.sh && chmod +x wallpapers.sh && ./wallpapers.sh && rm wallpapers.sh
+curl -o wallpapers.sh https://raw.githubusercontent.com/JMoratelli/Pos_Instalacao_Debian/main/wallpapers.sh && chmod +x wallpapers.sh && ./wallpapers.sh && rm wallpapers.sh
 ```

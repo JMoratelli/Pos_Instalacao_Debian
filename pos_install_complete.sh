@@ -9,9 +9,17 @@ echo -e "       ############################################################ \n"
 echo "For more information, visit the project link:"
 echo "https://github.com/phaleixo/after_install_debian_12"
 echo "Adaptado por jmoratelli e desenvolvido por phaleixo. https://github.com/phaleixo"
+echo "Recomenda-se utilização de usuário root, crie uma senha para o usuário root"
+sudo passwd root
+echo "Digite a senha root:"
+su
+sudo apt update
+
 ### Install Wireguard
 sudo apt install wireguard -y
-
+## Adiciona Chaves WireGuard
+wg genkey | tee /etc/wireguard/privatekey | wg pubkey > /etc/wireguard/publickey
+chmod 600 /etc/wireguard/privatekey
 ### check if there is an internet connection.
 if ping -q -c 3 -W 1 1.1.1.1 >/dev/null;
 then

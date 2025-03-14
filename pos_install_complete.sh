@@ -14,12 +14,9 @@ sudo passwd root
 echo "Digite a senha root:"
 su
 sudo apt update
+sudo apt install snapd -y
+susudo snap install discord
 
-### Install Wireguard
-sudo apt install wireguard -y
-## Adiciona Chaves WireGuard
-wg genkey | tee /etc/wireguard/privatekey | wg pubkey > /etc/wireguard/publickey
-chmod 600 /etc/wireguard/privatekey
 ### check if there is an internet connection.
 if ping -q -c 3 -W 1 1.1.1.1 >/dev/null;
 then

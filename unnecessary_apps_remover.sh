@@ -53,10 +53,7 @@ apps_remove=(
     goldendict*
     hdate*
     uim*
-    thunderbird*
-    gnome-music
-    gnome-software
-    
+    thunderbird*    
 )
 
 ### uninstall and clean

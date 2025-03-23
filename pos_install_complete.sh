@@ -74,6 +74,7 @@ apps=(
 	ttf-mscorefonts-installer
 	default-jre
 	default-jdk -y
+ 	corectrl
 )
 
 for app_name in "${apps[@]}"; do
@@ -100,6 +101,7 @@ flatpak=(
  	com.discordapp.Discord
   	com.valvesoftware.Steam
    	com.google.Chrome
+    	net.davidotek.pupgui2
 )
 
 for nome_do_flatpak in "${flatpak[@]}"; do

@@ -77,6 +77,7 @@ apps=(
 	default-jdk -y
  	corectrl
   	waydroid
+   	linphone
 )
 
 for app_name in "${apps[@]}"; do

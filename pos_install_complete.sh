@@ -101,6 +101,7 @@ flatpak=(
   	com.valvesoftware.Steam
    	com.google.Chrome
     	net.davidotek.pupgui2
+     	com.github.eneshecan.WhatsAppForLinux
 )
 
 for nome_do_flatpak in "${flatpak[@]}"; do

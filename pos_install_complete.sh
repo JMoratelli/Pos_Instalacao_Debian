@@ -29,6 +29,8 @@ sudo -v || (inform "sudo may not be installed or the user may not have sudo perm
 sudo apt-add-repository contrib -y
 sudo apt-add-repository non-free -y
 sudo apt update && sudo apt full-upgrade -y
+sudo apt install curl ca-certificates -y
+curl -s https://repo.waydro.id | sudo bash
 
 ### Install flatpak support and flathub repository
 sudo apt install gnome-software-plugin-flatpak -y 
@@ -74,6 +76,7 @@ apps=(
 	default-jre
 	default-jdk -y
  	corectrl
+  	waydroid
 )
 
 for app_name in "${apps[@]}"; do
